@@ -2911,7 +2911,7 @@
       )
 
       (stroke (width 0.1) (type solid)) (fill solid) (layer "F.Mask") (tstamp 5c082156-3f65-46c4-be0d-501b796cf164))
-    (pad "1" thru_hole circle (at -1.1004 -1.3416 180) (size 0.56 0.56) (drill 0.3) (layers "*.Cu")
+    (pad "1" thru_hole circle (at -1.1004 -1.3416 180) (size 1.3 1.3) (drill 1) (layers "*.Cu")
       (net 3 "Net-(BT1-+)") (pinfunction "+") (pintype "passive") (tstamp 116dc26c-a2e2-4eda-aab6-1057f754b9c2))
     (pad "1" smd custom (at -1.1 0) (size 1.5 2.1) (layers "F.Cu")
       (net 3 "Net-(BT1-+)") (pinfunction "+") (pintype "passive") (thermal_bridge_angle 45)
@@ -2939,7 +2939,7 @@
           )
           (width 0.1) (fill yes))
       ) (tstamp eadc87fd-ac9a-414f-9f39-5eb23f69125f))
-    (pad "2" thru_hole circle (at 1.1 -1.3416 180) (size 0.56 0.56) (drill 0.3) (layers "*.Cu")
+    (pad "2" thru_hole circle (at 1.1 -1.3416 180) (size 1.3 1.3) (drill 1) (layers "*.Cu")
       (net 1 "GND") (pinfunction "-") (pintype "passive") (tstamp 814fb31e-17c5-4f31-8e38-0af93ad74f2e))
     (pad "2" smd custom (at 1.1 0) (size 1.5 2.1) (layers "F.Cu")
       (net 1 "GND") (pinfunction "-") (pintype "passive") (thermal_bridge_angle 45)
