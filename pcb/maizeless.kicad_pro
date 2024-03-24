@@ -401,11 +401,13 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "lib"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dumta.kicad_pro",
+    "filename": "maizeless.kicad_pro",
     "version": 1
   },
   "net_settings": {

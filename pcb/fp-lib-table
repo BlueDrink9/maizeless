@@ -4,4 +4,5 @@
   (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/lib/kbd/kicad-footprints/kbd.pretty")(options "")(descr ""))
   (lib (name "swoop")(type "KiCad")(uri "${KIPRJMOD}/lib/swoop/swoop.pretty")(options "")(descr ""))
   (lib (name "dumta")(type "KiCad")(uri "${KIPRJMOD}/lib/dumta/dumta.pretty")(options "")(descr ""))
+  (lib (name "lib")(type "KiCad")(uri "${KIPRJMOD}/lib")(options "")(descr ""))
 )
