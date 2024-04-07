@@ -20,17 +20,15 @@ Genealogically speaking, it is forked from the [temper](https://github.com/raeed
 - Sweep-like column stagger (with pinky columns 2 mm lower, like chocofi) with Corne-like thumb cluster
 - Reversible PCB (so one design can be used for both halves)
 - Intended to be used with [SuperMini nrf52840](https://wiki.icbbuy.com/doku.php?id=developmentboard:nrf52840)
-- Uses a dirt-cheap 3-pin [SS12D00 SPDT power switch](https://vimex.com/switches/techdocs/SS12D00-tech.pdf), of which 
-- Includes pads for battery on keyboard shield PCB, and
-  through-hole
+- Uses a dirt-cheap 3-pin [SS12D00 SPDT power switch](https://vimex.com/switches/techdocs/SS12D00-tech.pdf), of which dozens of cheap clones are available on aliexpress.
+- Includes pads for battery wires on the keyboard shield PCB, and through-holes if you prefer to solder that way.
 - Easy and cheap to assemble, no soldering diodes and only through-hole
   soldering.
-- (non-feature) - awkward battery positioning, and no JST plug. Not
-  a big deal, just a heads up if you care.
+- (non-feature) - awkward battery positioning, and no easy JST plug spot for the battery. Not a big deal, just a heads up if you care, but I figure if you're here you're happy desoldering two wires to remove a battery. The off-switch will keep the power disconnected when not in use/travelling, anyway.
 - Trivial to alter the PCB design for:
   * 5 columns
   * use real nice!nanos (the 3 extra pins are in a sliiightly different position compared to the supermini).
-  * add Kailh hotswap sockets to the PCB design, if you'd rather solder those to pads instead of direct through-hole soldering switches.
+  * Kailh hotswap sockets in the PCB design, if you'd rather solder those to pads instead of direct through-hole soldering switches.
 
 ## Bill of Materials
 
@@ -42,8 +40,7 @@ Genealogically speaking, it is forked from the [temper](https://github.com/raeed
 - 42x Choc v1 keycaps
 - (optional) MCU socket (more of a hassle than usual because we're
   using the extra 3 pins):
-  - 4x Mill-Max 310 series machine sockets plus smaller ones for
-    the extra 3 pins
+  - 4x Mill-Max 310 series machine sockets
   - 54x Mill-Max pins for socketing microcontrollers
 - (optional) 2x Panasonic miniature momentary button switches  (for convenient reset buttons)
 
@@ -82,12 +79,17 @@ This keyboard uses [ZMK firmware](https://zmk.dev), which allows for configurati
 
 ## Resources
 
-I adapted a few of the elements from these KiCAD libraries for use in this design:
+These KiCAD libraries have elements adapted for use in this design.
+It is possible that kbd, marbastlib and keyswitches.pretty need to be installed
+as global KiCAD libraries, although I've tried to embed everything
+necessary as project files.
 
-- [chocofi](https://github.com/pashutk/chocofi) - The PCB switch layout came from the original chocofi design
 - [kbd](https://github.com/foostan/kbd) - This library, by foostan, the designer of the popular Corne keyboard, provides useful schematic symbols and footprints
 - [keyswitches.pretty](https://github.com/daprice/keyswitches.pretty) - library of switch footprints--especially useful for reversible PCBs.
-- [swoop](https://github.com/jimmerricks/swoop) - Contains reversible PCB footprints for ProMicro pinout, OLED screens, and 7-pin power switches.
+- [marbastlib](https://github.com/ebastler/marbastlib) - "A library
+  collecting MX and Choc style footprints, as well as various other
+  parts used to design custom keyboards."
+- [supermini-nrf52840-kicad](https://github.com/bluedrink9/supemini-nrf52840-kicad) - Contains reversible PCB footprints for SuperMini pinout
 
 
 ## Similar keyboards
